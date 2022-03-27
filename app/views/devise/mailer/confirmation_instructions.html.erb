@@ -1,5 +1,14 @@
-<p>Welcome <%= @email %>!</p>
+<div class="section">
+  <div class="container">
+  <div class="columns is-centered">
 
-<p>You can confirm your account email through the link below:</p>
+    <div class="column is-4">
+    <p>Welcome <%= @email %>!</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+    <p>You can confirm your account email through the link below:</p>
+
+    <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+    </div>
+  </div>
+  </div>
+</div>
